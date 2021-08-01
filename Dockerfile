@@ -1,8 +1,9 @@
+################## Create GoLang dev pipeline ##################
 FROM golang:1.16 as dev
 
 WORKDIR /work
 
-################## Create GoLang build pipeline
+################## Create GoLang build pipeline ##################
 FROM golang:1.16 as build
 
 COPY ./app/* /app/
