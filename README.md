@@ -16,7 +16,7 @@ We can also run go in a small docker container: <br/>
 cd golang\introduction
 
 docker build --target dev . -t <tag_name>
-docker run -it -v ${PWD}:/work <tag_name> sh
+docker run -it -p 8080:8080 -v ${PWD}:/work <tag_name> sh
 go version
 
 ```
